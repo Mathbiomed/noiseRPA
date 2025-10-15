@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains all MATLAB codes used to generate the figures in the manuscript, "Toward Single-Cell Control: Noise-Robust Perfect Adaptation in Biomolecular Systems". The codes are written in **MATLAB R2024a**.
+This repository contains all MATLAB codes used to generate the figures in the manuscript, "Toward Single-Cell Control: Noise-Robust Perfect Adaptation in Biomolecular Systems". The codes are written in **MATLAB R2024a**. Pre-simulated results, named 'noiseRPA.zip', can be found in realease v1.0.
 
 ---
 
