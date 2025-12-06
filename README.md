@@ -119,12 +119,112 @@ This repository contains all MATLAB codes used to generate the figures in the ma
 
 ---
 
+### `Figure S1`
+
+* **`FigS1.m`**
+
+  * Simulates and draws plots in **Fig. S1b**.
+
+* **Pre-simulated Result File**
+
+  * `FigS1_converged_NC.csv`: Converged value for the initial condition of simulation
+  
+---
+
+### `Figure S2`
+
+* **`FigS2.m`**
+
+  * Simulates and draws plots in **Fig. S2**.
+
+* **Pre-simulated Result Files**
+
+  * `FigS2_noAW_mean.mat`: Simulated mean trajectory without anti-windup in **Fig. S2a, b**
+  * `FigS2_noAW_variance.mat`: Simulated variance trajectory without anti-windup in **Fig. S2a, b**
+  * `FigS2_AW_mean.mat`: Simulated mean trajectory with anti-windup in **Fig. S2c, d**
+  * `FigS2_AW_variance.mat`: Simulated variance trajectory with anti-windup in **Fig. S2c, d**
+  
+---
+
+### `Figure S3`
+
+* **`FigS3.m`**
+
+  * Simulates and draws plots in **Fig. S3**.
+
+* **Pre-simulated Result Files**
+
+  * `FigS3_mu2_8.7_mean.mat`: Simulated mean trajectory where mu = 8.7
+  * `FigS3_mu2_8.7_sc.mat`: Simulated single-cell trajectory where mu = 8.7
+  * `FigS3_mu2_9.3_mean.mat`: Simulated mean trajectory where mu = 9.3
+  * `FigS3_mu2_9.3_sc.mat`: Simulated single-cell trajectory where mu = 9.3
+  * `FigS3_mu2_9.9_mean.mat`: Simulated mean trajectory where mu = 9.9
+  * `FigS3_mu2_9.9_sc.mat`: Simulated single-cell trajectory where mu = 9.9
+  * `FigS3_mu2_10.5_mean.mat`: Simulated mean trajectory where mu = 10.5
+  * `FigS3_mu2_10.5_sc.mat`: Simulated single-cell trajectory where mu = 10.5
+---
+
+### `Figure S4`
+
+* **`FigS4.m`**
+
+  * Simulates and draws plots in **Fig. S4**.
+
+* **Pre-simulated Result Files**
+
+  * `FigS4_per_20_mean.mat`: Simulated mean trajectory with 20-fold perturbation
+  * `FigS4_per_20_variance.mat`: Simulated variance trajectory with 20-fold perturbation
+  * `FigS4_per_50_mean.mat`: Simulated mean trajectory with 50-fold perturbation
+  * `FigS4_per_50_variance.mat`: Simulated variance trajectory with 50-fold perturbation
+  * `FigS4_per_100_mean.mat`: Simulated mean trajectory with 100-fold perturbation
+  * `FigS4_per_100_variance.mat`: Simulated variance trajectory with 100-fold perturbation
+  * `FigS4_per_10000_mean.mat`: Simulated mean trajectory with 10000-fold perturbation
+  * `FigS4_per_10000_variance.mat`: Simulated variance trajectory with 10000-fold perturbation
+
+---
+
+### `Figure S6`
+
+* **`FigS6b_NC.m`**
+
+  * Simulates and draws plots of the Fano factor trajectory of the network with MC and NC in **Fig. S6b**.
+
+* **`FigS6b_origin.m`**
+
+  * Simulates and draws plots of the Fano factor trajectory of the network with aPI controller in **Fig. S6b**.
+
+* **`FigS6d_NC.m`**
+
+  * Simulates and draws plots of the Fano factor trajectory of the network with MC and NC in **Fig. S6d**.
+
+* **`FigS6d_origin.m`**
+
+  * Simulates and draws plots of the Fano factor trajectory of the network with negative action in **Fig. S6d**.
+
+* **`FigS6f_NC.m`**
+
+  * Simulates and draws plots of the Fano factor trajectory of the network with MC and NC in **Fig. S6f**.
+
+* **`FigS6f_origin.m`**
+
+  * Simulates and draws plots of the Fano factor trajectory of the network with sensor-actuated AIF in **Fig. S6f**.
+
+---
+
+### `Figure S7`
+
+* **`FigS7b.m`**
+
+  * Simulates and draws plots of the Fano factor trajectory in **Fig. S7**.
+
+---
+
 ## Requirements
 
 * Servers
 
   * Servers are required for faster simulation
-  * `Fig2b.m`, `Fig2c.m`, `Fig3a_simulation.m`, `Fig3b_simulation.m`, `Fig3c_simulation.m`, `Fig3d_simulation.m` were simulated on an Intel Xeon Gold 6348 CPU.
+  * `Fig2b.m`, `Fig2c.m`, `Fig3a_simulation.m`, `Fig3b_simulation.m`, `Fig3c_simulation.m`, `Fig3d_simulation.m`, `FigS2.m`, `FigS3.m`, `FigS4.m`, `FigS7.m`, and all files in the `Figure S6` folder were simulated on an Intel Xeon Gold 6348 CPU.
     
 * MATLAB R2024a
 
@@ -148,3 +248,9 @@ This repository contains all MATLAB codes used to generate the figures in the ma
   * `Fig3d_simulation.m`: (with server) 7 hours
   * `Fig4_telegraph.m`: (with server) 5 hours
   * `Fig4_toggle_switch.m`: (with server) 5 hours
+  * `FigS1.m`: (with normal computer) less than 10 minutes
+  * `FigS2.m`: (with server) 7 hours
+  * `FigS3.m`: (with server) 2 hours
+  * `FigS4.m`: (with server) 1-2 days
+  * Files in `Figure S6`: (with server) 3 hours for files that end with '_origin', 1 day for files that end with '_NC'
+  * `FigS7.m`: (with server) 1 hour
